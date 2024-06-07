@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1136</width>
+    <height>910</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TEST Tools</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:  rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(198, 198, 198);</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1136</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QTabWidget" name="tabWidget_jiekou">
+       <property name="maximumSize">
+        <size>
+         <width>350</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="uart">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="accessibleName">
+         <string/>
+        </property>
+        <attribute name="title">
+         <string notr="true">UART</string>
+        </attribute>
+        <widget class="QFrame" name="frame_jiekou">
+         <property name="geometry">
+          <rect>
+           <x>-5</x>
+           <y>5</y>
+           <width>346</width>
+           <height>546</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>291</width>
+            <height>331</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_jiekou">
+           <item row="1" column="0">
+            <widget class="QFrame" name="frame_10">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>76</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">波特率:</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_bt">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>9600</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>112500</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QFrame" name="frame_13">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_12">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>81</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">校验位:</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_jy">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>无</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>奇</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>偶</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QFrame" name="frame_12">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>76</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">停止位:</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_tz">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>无</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QFrame" name="frame_11">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>76</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">数据位:</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_sj">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_9">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>51</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">端口:</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_dk">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QFrame" name="frame_14">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>81</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;流控制:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_kz">
+              <property name="geometry">
+               <rect>
+                <x>95</x>
+                <y>20</y>
+                <width>151</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>无</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>hard</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>soft</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_uartconnect">
+          <property name="geometry">
+           <rect>
+            <x>45</x>
+            <y>440</y>
+            <width>120</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string notr="true">打开串口</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_uartcut">
+          <property name="geometry">
+           <rect>
+            <x>185</x>
+            <y>440</y>
+            <width>120</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string notr="true">关闭串口</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="usb">
+        <attribute name="title">
+         <string>USB</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tcp">
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <attribute name="title">
+         <string notr="true">TCP</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="styleSheet">
+            <string notr="true">QpushButton{
+	background-color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="pushButton_disconnect">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>405</y>
+              <width>120</width>
+              <height>45</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>断开</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="gridLayoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>306</width>
+              <height>206</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_jiekou_3">
+             <item row="1" column="0">
+              <widget class="QFrame" name="frame_18">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>15</y>
+                  <width>96</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+                </property>
+                <property name="text">
+                 <string notr="true">子网掩码:</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_yanma_2">
+                <property name="geometry">
+                 <rect>
+                  <x>115</x>
+                  <y>11</y>
+                  <width>176</width>
+                  <height>36</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QFrame" name="frame_19">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>15</y>
+                  <width>126</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+                </property>
+                <property name="text">
+                 <string notr="true">服务器地址:</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_server_2">
+                <property name="geometry">
+                 <rect>
+                  <x>115</x>
+                  <y>15</y>
+                  <width>176</width>
+                  <height>36</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>8.135.10.183</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QFrame" name="frame_20">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>15</y>
+                  <width>76</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+                </property>
+                <property name="text">
+                 <string notr="true">端口:</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_prot_2">
+                <property name="geometry">
+                 <rect>
+                  <x>115</x>
+                  <y>10</y>
+                  <width>176</width>
+                  <height>36</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>35677</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_connect">
+            <property name="geometry">
+             <rect>
+              <x>25</x>
+              <y>405</y>
+              <width>120</width>
+              <height>45</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>连接</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame_log">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="log_label">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>10</y>
+          <width>72</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>日志</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="log_Edit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>781</width>
+          <height>546</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color:rgb(15, 204, 84);
+font: 10pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="lineWrapMode">
+         <enum>QTextEdit::WidgetWidth</enum>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'宋体'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Agency FB'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+        </property>
+        <property name="placeholderText">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_log">
+        <property name="geometry">
+         <rect>
+          <x>675</x>
+          <y>5</y>
+          <width>92</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>16进制</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTabWidget" name="tabWidget_ceshi">
+       <property name="maximumSize">
+        <size>
+         <width>350</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel{
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="test">
+        <attribute name="title">
+         <string>发送log</string>
+        </attribute>
+        <widget class="QWidget" name="gridLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>341</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_ceshi">
+          <item row="0" column="0">
+           <widget class="QTextEdit" name="sendlog">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>用例</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame_sendtext">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="send_label">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>5</y>
+          <width>72</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>发送窗口</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="send_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>665</x>
+          <y>220</y>
+          <width>101</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clear_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>665</x>
+          <y>150</y>
+          <width>101</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>清发送</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_sendtext">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>25</y>
+          <width>92</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>16进制</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="send_Edit">
+        <property name="geometry">
+         <rect>
+          <x>3</x>
+          <y>29</y>
+          <width>646</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clear_pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>665</x>
+          <y>80</y>
+          <width>101</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>清日志</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1136</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
